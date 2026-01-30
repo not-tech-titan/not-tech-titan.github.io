@@ -1,0 +1,217 @@
+:root {
+    --bg: #000000;
+    --fg: #ffffff;
+    --accent: #4fd1c5;
+    --muted: #bbbbbb;
+    --panel: #222222;
+}
+
+/* ================= GLOBAL ================= */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--panel);
+    z-index: 100;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.nav-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+}
+
+.nav-links a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--muted);
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* ================= HERO ================= */
+.hero {
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+.hero-title {
+    font-size: 1.5rem;
+    color: var(--muted);
+    margin: 0.5rem 0 2rem 0;
+    animation: fadeUp 0.8s ease-out forwards;
+    animation-delay: 0.15s;
+    opacity: 0;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    animation: fadeUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79, 209, 197, 0.25);
+}
+
+.btn.primary {
+    background: var(--accent);
+    color: #000;
+}
+
+.btn.secondary {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}
+
+/* ================= SECTIONS ================= */
+.section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================= SKILLS ================= */
+.skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skills li {
+    background: var(--panel);
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.skills li:hover {
+    transform: translateY(-3px);
+    background: #2a2a2a;
+}
+
+/* ================= PROJECT PREVIEWS ================= */
+.project {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.project-preview {
+    flex: 0 0 250px; /* GIF width */
+    max-width: 40%;
+}
+
+.project-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+}
+
+.project-preview img:hover {
+    transform: scale(1.02);
+}
+
+.project-info {
+    flex: 1;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+    .project-preview {
+        max-width: 100%;
+    }
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--muted);
+    animation: fadeIn 1s ease-out;
+}

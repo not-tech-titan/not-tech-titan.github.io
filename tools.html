@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tools | Tech Titan</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-inner">
+            <span class="logo">Tech Titan</span>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1 class="hero-name">Tools</h1>
+        <p class="hero-title">Engines, editors, and automation utilities</p>
+    </header>
+
+    <section class="section">
+        <h2>Development Tools</h2>
+
+        <div class="project">
+            <h3>Custom ECS Framework</h3>
+            <p>
+                A lightweight, cache-friendly Entity Component System designed
+                for real-time games with thousands of active entities.
+            </p>
+            <ul class="skills">
+                <li>ECS Design</li>
+                <li>Data-Oriented Programming</li>
+                <li>Scalability</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>In-Engine Debug & Editor Tools</h3>
+            <p>
+                Runtime tools for inspecting entities, components, and systems,
+                enabling faster debugging and iteration during development.
+            </p>
+            <ul class="skills">
+                <li>Editor Tooling</li>
+                <li>Debug Visualization</li>
+                <li>Developer UX</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Automation & Build Scripts</h3>
+            <p>
+                Custom automation utilities for asset processing, build
+                pipelines, and repetitive development tasks.
+            </p>
+            <ul class="skills">
+                <li>Automation</li>
+                <li>Scripting</li>
+                <li>Workflow Optimization</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        © 2026 Thomas Markland
+    </footer>
+
+</body>
+<script>
+const sections = document.querySelectorAll(".section");
+
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    },
+    { threshold: 0.15 }
+);
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</html>
