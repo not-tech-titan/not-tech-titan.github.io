@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Storm | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+<body class="game-page">
+<nav class="navbar">
+    <div class="nav-inner">
+        <span class="logo">Tech Titan</span>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../games.html">Games</a>
+            <a href="../tools.html">Tools</a>
+        </div>
+    </div>
+</nav>
+<header class="hero">
+    <h1 class="hero-name">Space Storm</h1>
+    <p class="hero-title">Navigate the void and blast anything in your path!</p>
+</header>
+<section class="section">
+    <div class="project">
+        <div class="project-preview">
+            <img src="../gifs/space_storm.gif" alt="Space Storm Gameplay" />
+        </div>
+        <div class="project-info">
+            <p>
+                Space Storm is a retro-inspired 2D space shooter designed to demonstrate the power and flexibility
+                of the Tech Titan Engine. Players pilot a nimble starfighter through increasingly challenging waves
+                of enemy ships, asteroids, and environmental hazards. Each level emphasizes fast reflexes, strategic
+                positioning, and skillful use of ship abilities. The game showcases physics-based movement, smooth
+                animations, and responsive controls, providing an engaging arcade experience. Whether dodging 
+                bullets, chaining combos, or upgrading your ship, every run rewards precision and timing. Space Storm 
+                combines nostalgia with modern gameplay polish, creating a satisfying and visually dynamic 
+                space combat experience.
+            </p>
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>WASD – Move</li>
+                <li>Mouse – Aim / Shoot</li>
+                <li>Space – Boost</li>
+                <li>Esc – Pause</li>
+            </ul>
+            <div class="project-actions">
+                <a href="../downloads/space_storm.zip" class="btn primary" download>Download</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>

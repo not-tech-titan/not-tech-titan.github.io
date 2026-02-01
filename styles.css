@@ -5,16 +5,13 @@
     --muted: #bbbbbb;
     --panel: #222222;
 }
-
 /* ================= GLOBAL ================= */
 * {
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -22,7 +19,6 @@ body {
     color: var(--fg);
     line-height: 1.6;
 }
-
 /* ================= ANIMATIONS ================= */
 @keyframes fadeUp {
     from {
@@ -34,12 +30,10 @@ body {
         transform: translateY(0);
     }
 }
-
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
 /* ================= NAVBAR ================= */
 .navbar {
     position: sticky;
@@ -50,7 +44,6 @@ body {
     z-index: 100;
     animation: fadeIn 0.6s ease-out;
 }
-
 .nav-inner {
     max-width: 900px;
     margin: 0 auto;
@@ -59,35 +52,29 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .logo {
     font-weight: 700;
 }
-
 .nav-links a {
     margin-left: 1rem;
     text-decoration: none;
     color: var(--muted);
     transition: color 0.2s ease;
 }
-
 .nav-links a:hover {
     color: var(--accent);
 }
-
 /* ================= HERO ================= */
 .hero {
     padding: 4rem 1.5rem;
     text-align: center;
 }
-
 .hero-name {
     font-size: 3rem;
     font-weight: 700;
     margin: 0.5rem 0;
     animation: fadeUp 0.8s ease-out forwards;
 }
-
 .hero-title {
     font-size: 1.5rem;
     color: var(--muted);
@@ -96,7 +83,6 @@ body {
     animation-delay: 0.15s;
     opacity: 0;
 }
-
 .hero-buttons {
     display: flex;
     justify-content: center;
@@ -105,7 +91,6 @@ body {
     animation-delay: 0.3s;
     opacity: 0;
 }
-
 /* ================= BUTTONS ================= */
 .btn {
     padding: 0.75rem 1.25rem;
@@ -117,22 +102,18 @@ body {
         box-shadow 0.2s ease,
         background 0.2s ease;
 }
-
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(79, 209, 197, 0.25);
 }
-
 .btn.primary {
     background: var(--accent);
     color: #000;
 }
-
 .btn.secondary {
     border: 1px solid var(--accent);
     color: var(--accent);
 }
-
 /* ================= SECTIONS ================= */
 .section {
     max-width: 900px;
@@ -142,12 +123,10 @@ body {
     transform: translateY(20px);
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
-
 .section.visible {
     opacity: 1;
     transform: translateY(0);
 }
-
 /* ================= SKILLS ================= */
 .skills {
     list-style: none;
@@ -156,19 +135,16 @@ body {
     flex-wrap: wrap;
     gap: 0.75rem;
 }
-
 .skills li {
     background: var(--panel);
     padding: 0.5rem 0.75rem;
     border-radius: 6px;
     transition: transform 0.2s ease, background 0.2s ease;
 }
-
 .skills li:hover {
     transform: translateY(-3px);
     background: #2a2a2a;
 }
-
 /* ================= PROJECT PREVIEWS ================= */
 .project {
     display: flex;
@@ -176,12 +152,10 @@ body {
     margin-bottom: 2rem;
     align-items: flex-start;
 }
-
 .project-preview {
     flex: 0 0 250px; /* GIF width */
     max-width: 40%;
 }
-
 .project-preview img {
     width: 100%;
     height: auto;
@@ -189,15 +163,12 @@ body {
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
     transition: transform 0.2s ease;
 }
-
 .project-preview img:hover {
     transform: scale(1.02);
 }
-
 .project-info {
     flex: 1;
 }
-
 /* Responsive for small screens */
 @media (max-width: 768px) {
     .project {
@@ -207,7 +178,42 @@ body {
         max-width: 100%;
     }
 }
-
+/* ================= PROJECT LINKS ================= */
+.project-actions {
+    margin-top: 1rem;
+}
+.project-actions .btn {
+    display: inline-block;
+}
+/* ================= GAME PAGE SPECIFIC ================= */
+.game-page .project {
+    flex-direction: column; /* stack preview above text */
+    align-items: center;
+    gap: 1.5rem;
+}
+.game-page .project-preview {
+    max-width: 480px;
+    width: 100%;
+}
+.game-page .project-preview img,
+.game-page .project-preview video {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+}
+.game-page .project-preview img:hover,
+.game-page .project-preview video:hover {
+    transform: scale(1.02);
+}
+/* ================= GAME PAGE BUTTONS ================= */
+body.game-page .project-actions {
+    display: flex;
+    justify-content: center;   /* centers horizontally */
+    gap: 1rem;                 /* spacing between buttons */
+    margin-top: 1.5rem;        /* some space above buttons */
+}
 /* ================= FOOTER ================= */
 .footer {
     text-align: center;

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Storm | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="game-page">
+<nav class="navbar">
+    <div class="nav-inner">
+        <span class="logo">Tech Titan</span>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../games.html">Games</a>
+            <a href="../tools.html">Tools</a>
+        </div>
+    </div>
+</nav>
+<header class="hero">
+    <h1 class="hero-name">Echoed Halls</h1>
+    <p class="hero-title">Will you be the first to escape?</p>
+</header>
+<section class="section">
+    <div class="project">
+        <div class="project-preview">
+            <img src="../gifs/echoed_halls.gif" alt="Echoed Halls Gameplay" />
+        </div>
+        <div class="project-info">
+            <p>
+                Echoed Halls is a procedurally generated first-person dungeon crawler focused on exploration,
+                discovery, and atmospheric tension. Each playthrough presents unique dungeon layouts, enemy
+                placements, and loot, ensuring no two runs feel the same. Players traverse twisting corridors,
+                hidden chambers, and ominous halls, encountering environmental puzzles, traps, and AI-driven
+                adversaries. The game implements a Drunkard's Walk algorithm for dungeon generation, alongside
+                careful memory and performance optimization to maintain smooth gameplay. Audio and lighting
+                work in tandem to immerse players, creating a sense of mystery and suspense at every turn.
+                Echoed Halls challenges both strategic thinking and reflexes, rewarding exploration and
+                careful planning with powerful rewards and hidden secrets.
+            </p>
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>Left Stick - Move</li>
+                <li>Drag Right – Look Around</li>
+                <li>Left Button – Attack</li>
+                <li>Right Button – Switch Weapon</li>
+            </ul>
+            <div class="project-actions">
+                <a href="../downloads/echoed_halls.apk" class="btn primary" download>Download</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>

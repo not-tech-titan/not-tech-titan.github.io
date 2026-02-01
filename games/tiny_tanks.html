@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zed Ops: Rezurection | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="game-page">
+<nav class="navbar">
+    <div class="nav-inner">
+        <span class="logo">Tech Titan</span>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../games.html">Games</a>
+            <a href="../tools.html">Tools</a>
+        </div>
+    </div>
+</nav>
+<header class="hero">
+    <h1 class="hero-name">Tiny Tanks 64</h1>
+    <p class="hero-title">Watch out for that mine!</p>
+</header>
+<section class="section">
+    <div class="project">
+        <div class="project-preview">
+            <img src="../gifs/tiny_tanks.gif" alt="Tiny Tanks 64 Gameplay" />
+        </div>
+        <div class="project-info">
+            <p>
+                Tiny Tanks 64 reimagines the classic Wii Play "Tanks" minigame as a fully-featured multiplayer 
+                experience. Players control miniature tanks in diverse arenas with destructible obstacles,
+                power-ups, and interactive hazards. The game leverages dynamic AI systems to create challenging
+                solo matches, while networking code enables seamless multiplayer battles across local and online
+                sessions. Controls are responsive, movement and shooting are finely tuned, and arenas are designed
+                for strategy as well as chaotic fun. Tiny Tanks 64 emphasizes fast-paced, skill-driven combat
+                while maintaining a playful, accessible aesthetic that captures the charm of the original
+                mini-game and expands it into a full-fledged, replayable title.
+            </p>
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>WASD – Move</li>
+                <li>Mouse – Aim / Shoot</li>
+                <li>Space – Place Mine</li>
+                <li>Esc – Pause</li>
+            </ul>
+            <div class="project-actions">
+                <a href="../downloads/tiny_tanks.zip" class="btn primary" download>Download</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
