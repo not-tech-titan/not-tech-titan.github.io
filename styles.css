@@ -185,6 +185,32 @@ body {
 .project-actions .btn {
     display: inline-block;
 }
+/* ================= COMING SOON ================= */
+.coming-soon {
+    position: relative;
+}
+
+.coming-soon .blur-content {
+    filter: blur(3px);
+    opacity: 0.6;
+}
+
+.coming-soon::after {
+    content: "COMING SOON";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: rgba(0,0,0,0.75);
+    color: white;
+    
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
 /* ================= GAME PAGE SPECIFIC ================= */
 .game-page .project {
     flex-direction: column; /* stack preview above text */

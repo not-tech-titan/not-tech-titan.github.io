@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zed Ops Arcade 2 | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="game-page">
+<nav class="navbar">
+    <div class="nav-inner">
+        <span class="logo">Tech Titan</span>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../games.html">Games</a>
+            <a href="../tools.html">Tools</a>
+        </div>
+    </div>
+</nav>
+<header class="hero">
+    <h1 class="hero-name">Zed Ops Arcade 2</h1>
+    <p class="hero-title">The horror continues...</p>
+</header>
+<section class="section">
+    <div class="project">
+        <div class="project-preview">
+            <img src="../gifs/zed_ops_2.gif" alt="Zed Ops Gameplay" />
+        </div>
+        <div class="project-info">
+            <p>
+                Zed Ops Arcade 2 is a wave-based zombie survival shooter and the sequel to the original Zed Ops Arcade. Built in Unreal Engine 5, the game expands on the fast-paced survival formula with larger arenas, improved visuals, and deeper progression between rounds.
+
+Players must survive increasingly difficult waves of undead while managing ammo, positioning, and timing. Weapons can now be purchased directly from the walls, allowing players to quickly rearm and adapt their strategy as the difficulty escalates. Choosing when to upgrade gear, conserve resources, or push forward becomes critical to surviving longer runs.
+
+The game emphasizes tight combat, tactical movement, and escalating pressure, rewarding players who can stay calm while the battlefield fills with enemies. Enhanced lighting, particle effects, and atmosphere create a tense environment where every wave feels more dangerous than the last.
+
+Zed Ops Arcade 2 builds on the foundation of the original while delivering a more refined, modern survival experience.
+            </p>
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>WASD – Move</li>
+                <li>Mouse – Aim / Shoot</li>
+                <li>Space – Jump</li>
+                <li>Esc – Pause</li>
+            </ul>
+            <div class="legacy-notice">
+                <strong>Legacy Project Notice:</strong> <br>This game is part of my early portfolio and may contain bugs or unfinished elements. It will not receive updates.
+            </div>
+            <div class="project-actions">
+                <a href="https://nottwitch.itch.io/zed-ops-arcade-v02a" class="btn primary" download>Get on Itch.io</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
