@@ -185,6 +185,18 @@ body {
 .project-actions .btn {
     display: inline-block;
 }
+/* ================= Legacy Projects ================= */
+.legacy-notice {
+    background: #f8d7da;       /* light red/pink background */
+    color: #721c24;            /* dark red text */
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    border: 1px solid #f5c6cb; /* subtle border */
+    font-family: sans-serif;
+}
 /* ================= COMING SOON ================= */
 .coming-soon {
     position: relative;
