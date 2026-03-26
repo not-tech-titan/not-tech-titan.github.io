@@ -114,6 +114,22 @@ body {
     border: 1px solid var(--accent);
     color: var(--accent);
 }
+.btn.tertiary {
+    border: 1px solid chartreuse;
+    color: chartreuse;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px; /* space between icon and text */
+    padding: 4px 10px; /* make buttons smaller */
+    font-size: 14px;
+    text-decoration: none;
+}
+.btn-icon {
+    width: 64px;   /* shrink icon */
+    height: 64px;
+    object-fit: cover;
+    border-radius: 3px; /* optional, subtle rounded corners */
+}
 /* ================= SECTIONS ================= */
 .section {
     max-width: 900px;
