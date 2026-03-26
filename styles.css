@@ -52,8 +52,35 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.logo {
-    font-weight: 700;
+
+/* Logo container for profile + text */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* space between image and text */
+}
+
+/* Circular profile button */
+.profile-btn {
+    display: inline-block;
+    width: 40px;         /* adjust size as needed */
+    height: 40px;
+    border-radius: 50%;  /* makes it circular */
+    overflow: hidden;
+    border: 2px solid var(--accent); /* optional border */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(79, 209, 197, 0.5);
+}
+
+/* Profile image fills the button */
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .nav-links a {
     margin-left: 1rem;
@@ -129,6 +156,10 @@ body {
     height: 8em;
     object-fit: cover;
     border-radius: 3px; /* optional, subtle rounded corners */
+}
+.btn-home-icon {
+    width: 3em;   /* shrink icon */
+    height: 3em;
 }
 /* ================= SECTIONS ================= */
 .section {
