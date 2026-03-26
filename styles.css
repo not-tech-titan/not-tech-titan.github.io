@@ -125,8 +125,8 @@ body {
     text-decoration: none;
 }
 .btn-icon {
-    width: 64px;   /* shrink icon */
-    height: 64px;
+    width: 4em;   /* shrink icon */
+    height: 4em;
     object-fit: cover;
     border-radius: 3px; /* optional, subtle rounded corners */
 }
