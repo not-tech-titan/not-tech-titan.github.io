@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zed Ops: Java Edition | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="game-page">
+<nav class="navbar">
+    <div class="nav-inner">
+        <span class="logo">Tech Titan</span>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../games.html">Games</a>
+            <a href="../tools.html">Tools</a>
+        </div>
+    </div>
+</nav>
+<header class="hero">
+    <h1 class="hero-name">Zed Ops: Java Edition</h1>
+    <p class="hero-title">Now with pre-rendered sprites!</p>
+</header>
+<section class="section">
+    <div class="project">
+        <div class="project-preview">
+            <img src="../gifs/zed_ops_java.gif" alt="Zed Ops Java" />
+        </div>
+        <div class="project-info">
+            <p>
+                Zed Ops: Java Edition is a infinite zombie shooter survival inspired by Black Ops Zombies on the DS. Players 
+                face countless hordes of undead, navigating through the map, unlocking new areas, and gathering new weaponry to survive as long as possible.
+                The game emphasizes tactical gameplay, requiring players to manage limited resources, and coordinate movement carefully to stay alive.
+                Each match gives the player a new opportunity to try new strategies, obtain new weapons, and break their high score!
+            </p>
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>WASD – Move</li>
+                <li>Mouse – Aim / Shoot</li>
+                <li>F – Interact</li>
+                <li>Shift – Run</li>
+                <li>Escape – Pause</li>
+            </ul>
+            <div class="legacy-notice">
+                <strong>Legacy Project Notice:</strong> <br>This game is part of my early portfolio and may contain bugs or unfinished elements. It will not receive updates.
+            </div>
+            <div class="project-actions">
+                <a href="https://nottechtitan.itch.io/zed-ops-java-edition" class="btn primary">Get on Itch.io</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+    <div class="footer-buttons">
+        <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank">GitHub</a>
+        <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank">Itch.io</a>
+        <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank">Fiverr</a>
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
