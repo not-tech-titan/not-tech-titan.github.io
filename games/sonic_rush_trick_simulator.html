@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Rush Trick Simulator | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="game-page">
+<nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <a href="../index.html" class="profile-btn">
+                    <img src="../images/icon.png" alt="Profile Picture" class="profile-img">
+                </a>
+                <span class="logo">Tech Titan</span>
+            </div>
+            <div class="nav-links">
+                <a href="../games.html">Games</a>
+                <a href="../tools.html">Tools</a>
+            </div>
+        </div>
+</nav>
+<header class="hero">
+    <h1 class="hero-name">Sonic Rush Trick Simulator</h1>
+    <p class="hero-title">Yes! Ok! Yes! Ok!</p>
+</header>
+<section class="section">
+    <div class="project">
+        <div class="project-preview">
+            <img src="../gifs/sonic_rush_trick_simulator.gif" alt="Sonic Rush Trick Simulator" />
+        </div>
+        <div class="project-info">
+            <p>
+                Sonic Rush Trick Simulator is a basic trick simulator made in Scratch inspired by Sonic Rush's trick system.
+                Do stylish tricks, rack up points, gather insane score multipliers, and try to beat your high score! 
+                The game emphasizes stylish gameplay, requiring players to carefully chain tricks together to maximize their score.
+            </p>
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>Space/Click/Tap Screen – Do Trick</li>
+            </ul>
+            <div class="legacy-notice">
+                <strong>Legacy Project Notice:</strong> <br>This game is part of my early portfolio and may contain bugs or unfinished elements. It will not receive updates.
+            </div>
+            <div class="project-actions">
+                <a href="../games/sonic_rush_trick_simulator_game.html" class="btn primary">Play Game</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+    <div class="footer-buttons">
+        <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank">GitHub</a>
+        <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank">Itch.io</a>
+        <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank">Fiverr</a>
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
