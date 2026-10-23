@@ -232,6 +232,39 @@ body {
 .project-actions .btn {
     display: inline-block;
 }
+/* ================= SIP PAGE ================= */
+.sip-workflow,
+.sip-artifacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.sip-workflow-step,
+.sip-artifact,
+.sip-brief-placeholder {
+    padding: 1rem;
+    border: 1px solid var(--panel);
+    border-radius: 6px;
+    background: var(--panel);
+}
+.sip-workflow-step,
+.sip-brief-placeholder {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.sip-workflow-step span,
+.sip-artifact p,
+.sip-brief-placeholder span {
+    color: var(--muted);
+}
+.sip-artifact h3 {
+    margin-top: 0;
+}
+.sip-artifact a {
+    color: var(--accent);
+}
 /* ================= Legacy Projects ================= */
 .legacy-notice {
     background: #f8d7da;       /* light red/pink background */
@@ -277,8 +310,10 @@ body {
     gap: 1.5rem;
 }
 .game-page .project-preview {
+    flex: 0 0 auto;
     max-width: 480px;
     width: 100%;
+    align-self: center;
 }
 .game-page .project-preview img,
 .game-page .project-preview video {

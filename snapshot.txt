@@ -1,0 +1,1801 @@
+================================================================================
+PROJECT SNAPSHOT
+================================================================================
+
+Project: not-tech-titan.github.io
+Path: C:\Github\not-tech-titan.github.io
+Generated: 2026-10-20 19:30:28
+
+================================================================================
+FILE STRUCTURE
+================================================================================
+
+not-tech-titan.github.io/
+├── games/
+│   ├── echoed_halls.html
+│   ├── sonic_rush_trick_simulator.html
+│   ├── sonic_rush_trick_simulator_game.html
+│   ├── space_storm.html
+│   ├── tiny_tanks.html
+│   ├── zed_ops.html
+│   ├── zed_ops_2.html
+│   └── zed_ops_java.html
+├── gifs/
+│   ├── echoed_halls.gif
+│   ├── sonic_rush_trick_simulator.gif
+│   ├── space_storm.gif
+│   ├── tech_titan_engine.gif
+│   ├── tiny_tanks.gif
+│   ├── zed_ops.gif
+│   ├── zed_ops_2.gif
+│   └── zed_ops_java.gif
+├── images/
+│   ├── debug.png
+│   ├── icon.png
+│   ├── python script.png
+│   └── web dev.png
+├── tools/
+│   └── tech_titan_engine.html
+├── games.html
+├── index.html
+├── README.md
+├── styles.css
+└── tools.html
+
+================================================================================
+FILE CONTENTS
+================================================================================
+
+
+================================================================================
+FILE: games\echoed_halls.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Storm | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="game-page">
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <a href="../index.html" class="profile-btn">
+                    <img src="../images/icon.png" alt="Profile Picture" class="profile-img">
+                </a>
+                <span class="logo">Tech Titan</span>
+            </div>
+            <div class="nav-links">
+                <a href="../games.html">Games</a>
+                <a href="../tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+<header class="hero">
+    <h1 class="hero-name">Echoed Halls</h1>
+    <p class="hero-title">Will you be the first to escape?</p>
+</header>
+<section class="section">
+    <div class="project">
+        <div class="project-preview">
+            <img src="../gifs/echoed_halls.gif" alt="Echoed Halls Gameplay" />
+        </div>
+        <div class="project-info">
+            <p>
+                Echoed Halls is a procedurally generated first-person dungeon crawler focused on exploration,
+                discovery, and atmospheric tension. Each playthrough presents unique dungeon layouts, enemy
+                placements, and loot, ensuring no two runs feel the same. Players traverse twisting corridors,
+                hidden chambers, and ominous halls, encountering environmental puzzles, traps, and AI-driven
+                adversaries. The game implements a Drunkard's Walk algorithm for dungeon generation, alongside
+                careful memory and performance optimization to maintain smooth gameplay. Audio and lighting
+                work in tandem to immerse players, creating a sense of mystery and suspense at every turn.
+                Echoed Halls challenges both strategic thinking and reflexes, rewarding exploration and
+                careful planning with powerful rewards and hidden secrets.
+            </p>
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>Left Stick - Move</li>
+                <li>Drag Right – Look Around</li>
+                <li>Left Button – Attack</li>
+                <li>Right Button – Switch Weapon</li>
+            </ul>
+            <div class="legacy-notice">
+                <strong>Legacy Project Notice:</strong><br>
+                This game is part of my early portfolio and may contain bugs or unfinished elements. It will not receive updates.
+            </div>
+            <div class="project-actions">
+                <a href="https://nottwitch.itch.io/echoes-of-the-abyss-7-day-edition" class="btn primary">Get on Itch.io</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+    <div class="footer-buttons">
+        <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank">GitHub</a>
+        <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank">Itch.io</a>
+        <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank">Fiverr</a>
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
+
+
+
+================================================================================
+FILE: games\sonic_rush_trick_simulator.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Rush Trick Simulator | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="game-page">
+<nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <a href="../index.html" class="profile-btn">
+                    <img src="../images/icon.png" alt="Profile Picture" class="profile-img">
+                </a>
+                <span class="logo">Tech Titan</span>
+            </div>
+            <div class="nav-links">
+                <a href="../games.html">Games</a>
+                <a href="../tools.html">Tools</a>
+            </div>
+        </div>
+</nav>
+<header class="hero">
+    <h1 class="hero-name">Sonic Rush Trick Simulator</h1>
+    <p class="hero-title">Yes! Ok! Yes! Ok!</p>
+</header>
+<section class="section">
+    <div class="project">
+        <div class="project-preview">
+            <img src="../gifs/sonic_rush_trick_simulator.gif" alt="Sonic Rush Trick Simulator" />
+        </div>
+        <div class="project-info">
+            <p>
+                Sonic Rush Trick Simulator is a basic trick simulator made in Scratch inspired by Sonic Rush's trick system.
+                Do stylish tricks, rack up points, gather insane score multipliers, and try to beat your high score! 
+                The game emphasizes stylish gameplay, requiring players to carefully chain tricks together to maximize their score.
+            </p>
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>Space/Click/Tap Screen – Do Trick</li>
+            </ul>
+            <div class="legacy-notice">
+                <strong>Legacy Project Notice:</strong> <br>This game is part of my early portfolio and may contain bugs or unfinished elements. It will not receive updates.
+            </div>
+            <div class="project-actions">
+                <a href="../games/sonic_rush_trick_simulator_game.html" class="btn primary">Play Game</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+    <div class="footer-buttons">
+        <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank">GitHub</a>
+        <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank">Itch.io</a>
+        <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank">Fiverr</a>
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
+
+
+
+================================================================================
+FILE: games\sonic_rush_trick_simulator_game.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Rush Trick Simulator | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="game-page">
+<nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <a href="../index.html" class="profile-btn">
+                    <img src="../images/icon.png" alt="Profile Picture" class="profile-img">
+                </a>
+                <span class="logo">Tech Titan</span>
+            </div>
+            <div class="nav-links">
+                <a href="../games.html">Games</a>
+                <a href="../tools.html">Tools</a>
+            </div>
+        </div>
+</nav>
+<header class="hero">
+    <h1 class="hero-name">Sonic Rush Trick Simulator</h1>
+    <p class="hero-title">Yes! Ok! Yes! Ok!</p>
+</header>
+<section class="section">
+    <div class="project">
+        <iframe src="https://scratch.mit.edu/projects/1362755832/embed" allowtransparency="true" width="640" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <div class="project-info">
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>Space/Click/Tap Screen – Do Trick</li>
+            </ul>
+            <div class="legacy-notice">
+                <strong>Legacy Project Notice:</strong> <br>This game is part of my early portfolio and may contain bugs or unfinished elements. It will not receive updates.
+            </div>
+            <div class="project-actions">
+                <a href="https://scratch.mit.edu/projects/1362755832/" class="btn primary" target="_blank">View on Scratch</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+    <div class="footer-buttons">
+        <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank">GitHub</a>
+        <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank">Itch.io</a>
+        <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank">Fiverr</a>
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
+
+
+
+================================================================================
+FILE: games\space_storm.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Storm | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+<body class="game-page">
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <a href="../index.html" class="profile-btn">
+                    <img src="../images/icon.png" alt="Profile Picture" class="profile-img">
+                </a>
+                <span class="logo">Tech Titan</span>
+            </div>
+            <div class="nav-links">
+                <a href="../games.html">Games</a>
+                <a href="../tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+<header class="hero">
+    <h1 class="hero-name">Space Storm</h1>
+    <p class="hero-title">Navigate the void and blast anything in your path!</p>
+</header>
+<section class="section">
+    <div class="project">
+        <div class="project-preview">
+            <img src="../gifs/space_storm.gif" alt="Space Storm Gameplay" />
+        </div>
+        <div class="project-info">
+            <p>
+                Space Storm is a retro-inspired 2D space shooter with Vectrex inspired graphics. Players pilot a nimble starfighter through increasingly challenging waves
+                of enemy ships, asteroids, and environmental hazards. Each level emphasizes fast reflexes, strategic
+                positioning, and skillful use of ship abilities. The game showcases physics-based movement, smooth
+                animations, and responsive controls, providing an engaging arcade experience. Whether dodging 
+                bullets, chaining combos, or upgrading your ship, every run rewards precision and timing. Space Storm 
+                combines nostalgia with modern gameplay polish, creating a satisfying and visually dynamic 
+                space combat experience.
+            </p>
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>WASD – Move</li>
+                <li>Mouse – Aim / Shoot</li>
+                <li>Space – Boost</li>
+                <li>Esc – Pause</li>
+            </ul>
+            <div class="legacy-notice">
+                <strong>Legacy Project Notice:</strong> <br>This game is part of my early portfolio and may contain bugs or unfinished elements. It will not receive updates.
+            </div>
+            <div class="project-actions">
+                <a href="https://nottwitch.itch.io/space-storm" class="btn primary">Get on Itch.io</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+    <div class="footer-buttons">
+        <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank">GitHub</a>
+        <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank">Itch.io</a>
+        <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank">Fiverr</a>
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
+
+
+
+================================================================================
+FILE: games\tiny_tanks.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiny Tanks | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="game-page">
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <a href="../index.html" class="profile-btn">
+                    <img src="../images/icon.png" alt="Profile Picture" class="profile-img">
+                </a>
+                <span class="logo">Tech Titan</span>
+            </div>
+            <div class="nav-links">
+                <a href="../games.html">Games</a>
+                <a href="../tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+<header class="hero">
+    <h1 class="hero-name">Tiny Tanks</h1>
+    <p class="hero-title">Watch out for that mine!</p>
+</header>
+<section class="section">
+    <div class="project">
+        <div class="project-preview">
+            <img src="../gifs/tiny_tanks.gif" alt="Tiny Tanks 64 Gameplay" />
+        </div>
+        <div class="project-info">
+            <p>
+                Tiny Tanks reimagines the classic Wii Play "Tanks" minigame as a fully-featured 
+                experience. Players control miniature tanks in diverse arenas with destructible obstacles,
+                power-ups, and interactive hazards. The game leverages dynamic AI systems to create challenging
+                solo experiences. Controls are responsive, movement and shooting are finely tuned, and arenas are designed
+                for strategy as well as chaotic fun. Tiny Tanks emphasizes fast-paced, skill-driven combat
+                while maintaining a playful, accessible aesthetic that captures the charm of the original
+                mini-game and expands it into a full-fledged, replayable title.
+            </p>
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>WASD – Move</li>
+                <li>Mouse – Aim / Shoot</li>
+                <li>Space – Place Mine</li>
+                <li>Esc – Pause</li>
+            </ul>
+            <div class="legacy-notice">
+                <strong>Legacy Project Notice:</strong> <br>This game is part of my early portfolio and may contain bugs or unfinished elements. It will not receive updates.
+            </div>
+            <div class="project-actions">
+                <a href="https://nottwitch.itch.io/tiny-tanks" class="btn primary">Get on Itch.io</a>
+                <a href="https://github.com/not-tech-titan/Tiny-Tanks" class="btn primary">View Source Code</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+    <div class="footer-buttons">
+        <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank">GitHub</a>
+        <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank">Itch.io</a>
+        <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank">Fiverr</a>
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
+
+
+
+================================================================================
+FILE: games\zed_ops.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zed Ops Arcade | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="game-page">
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <a href="../index.html" class="profile-btn">
+                    <img src="../images/icon.png" alt="Profile Picture" class="profile-img">
+                </a>
+                <span class="logo">Tech Titan</span>
+            </div>
+            <div class="nav-links">
+                <a href="../games.html">Games</a>
+                <a href="../tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+<header class="hero">
+    <h1 class="hero-name">Zed Ops Arcade</h1>
+    <p class="hero-title">Never stop running!</p>
+</header>
+<section class="section">
+    <div class="project">
+        <div class="project-preview">
+            <img src="../gifs/zed_ops.gif" alt="Zed Ops Gameplay" />
+        </div>
+        <div class="project-info">
+            <p>
+                Zed Ops Arcade is a infinite zombie shooter survival inspired by Doom and Goldeneye 007. Players 
+                face relentless hordes of undead, navigating
+                maps filled with tight corridors, strategic chokepoints, an abundance of upgrades, and no way out.
+                The game emphasizes tactical gameplay, requiring players to manage limited resources, 
+                coordinate movement, and plan ahead to survive.
+                Each match challenges players to adapt to evolving threats, rewarding skill, planning, and rapid 
+                decision-making. The dark, atmospheric environments are enhanced with lighting and particle effects
+                to immerse players in a tense survival experience.
+            </p>
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>WASD – Move</li>
+                <li>Mouse – Aim / Shoot</li>
+                <li>Space – Jump</li>
+                <li>Shift – Run</li>
+                <li>Escape – Pause</li>
+            </ul>
+            <div class="legacy-notice">
+                <strong>Legacy Project Notice:</strong> <br>This game is part of my early portfolio and may contain bugs or unfinished elements. It will not receive updates.
+            </div>
+            <div class="project-actions">
+                <a href="https://nottwitch.itch.io/project-zombies" class="btn primary">Get on Itch.io</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+    <div class="footer-buttons">
+        <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank">GitHub</a>
+        <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank">Itch.io</a>
+        <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank">Fiverr</a>
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
+
+
+
+================================================================================
+FILE: games\zed_ops_2.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zed Ops Arcade 2 | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="game-page">
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <a href="../index.html" class="profile-btn">
+                    <img src="../images/icon.png" alt="Profile Picture" class="profile-img">
+                </a>
+                <span class="logo">Tech Titan</span>
+            </div>
+            <div class="nav-links">
+                <a href="../games.html">Games</a>
+                <a href="../tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+<header class="hero">
+    <h1 class="hero-name">Zed Ops Arcade 2</h1>
+    <p class="hero-title">The horror continues...</p>
+</header>
+<section class="section">
+    <div class="project">
+        <div class="project-preview">
+            <img src="../gifs/zed_ops_2.gif" alt="Zed Ops Gameplay" />
+        </div>
+        <div class="project-info">
+            <p>
+                Zed Ops Arcade 2 is a wave-based zombie survival shooter and the sequel to the original Zed Ops Arcade. Built in Unreal Engine 5, the game expands on the fast-paced survival formula with larger arenas, improved visuals, and deeper progression between rounds.
+
+Players must survive increasingly difficult waves of undead while managing ammo, positioning, and timing. Weapons can now be purchased directly from the walls, allowing players to quickly rearm and adapt their strategy as the difficulty escalates. Choosing when to upgrade gear, conserve resources, or push forward becomes critical to surviving longer runs.
+
+The game emphasizes tight combat, tactical movement, and escalating pressure, rewarding players who can stay calm while the battlefield fills with enemies. Enhanced lighting, particle effects, and atmosphere create a tense environment where every wave feels more dangerous than the last.
+
+Zed Ops Arcade 2 builds on the foundation of the original while delivering a more refined, modern survival experience.
+            </p>
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>WASD – Move</li>
+                <li>Mouse – Aim / Shoot</li>
+                <li>Space – Jump</li>
+                <li>Esc – Pause</li>
+            </ul>
+            <div class="legacy-notice">
+                <strong>Legacy Project Notice:</strong> <br>This game is part of my early portfolio and may contain bugs or unfinished elements. It will not receive updates.
+            </div>
+            <div class="project-actions">
+                <a href="https://nottwitch.itch.io/zed-ops-arcade-v02a" class="btn primary">Get on Itch.io</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+    <div class="footer-buttons">
+        <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank">GitHub</a>
+        <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank">Itch.io</a>
+        <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank">Fiverr</a>
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
+
+
+
+================================================================================
+FILE: games\zed_ops_java.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zed Ops: Java Edition | Tech Titan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="game-page">
+<nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <a href="../index.html" class="profile-btn">
+                    <img src="../images/icon.png" alt="Profile Picture" class="profile-img">
+                </a>
+                <span class="logo">Tech Titan</span>
+            </div>
+            <div class="nav-links">
+                <a href="../games.html">Games</a>
+                <a href="../tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+<header class="hero">
+    <h1 class="hero-name">Zed Ops: Java Edition</h1>
+    <p class="hero-title">Now with pre-rendered sprites!</p>
+</header>
+<section class="section">
+    <div class="project">
+        <div class="project-preview">
+            <img src="../gifs/zed_ops_java.gif" alt="Zed Ops Java" />
+        </div>
+        <div class="project-info">
+            <p>
+                Zed Ops: Java Edition is a infinite zombie shooter survival inspired by Black Ops Zombies on the DS. Players 
+                face countless hordes of undead, navigating through the map, unlocking new areas, and gathering new weaponry to survive as long as possible.
+                The game emphasizes tactical gameplay, requiring players to manage limited resources, and coordinate movement carefully to stay alive.
+                Each match gives the player a new opportunity to try new strategies, obtain new weapons, and break their high score!
+            </p>
+            <h3>Controls</h3>
+            <ul class="skills">
+                <li>WASD – Move</li>
+                <li>Mouse – Aim / Shoot</li>
+                <li>F – Interact</li>
+                <li>Shift – Run</li>
+                <li>Escape – Pause</li>
+            </ul>
+            <div class="legacy-notice">
+                <strong>Legacy Project Notice:</strong> <br>This game is part of my early portfolio and may contain bugs or unfinished elements. It will not receive updates.
+            </div>
+            <div class="project-actions">
+                <a href="https://nottechtitan.itch.io/zed-ops-java-edition" class="btn primary">Get on Itch.io</a>
+                <a href="../games.html" class="btn secondary">Back to Games</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+    <div class="footer-buttons">
+        <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank">GitHub</a>
+        <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank">Itch.io</a>
+        <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank">Fiverr</a>
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
+
+
+
+================================================================================
+FILE: games.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games | Tech Titan</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <a href="index.html" class="profile-btn">
+                    <img src="images/icon.png" alt="Profile Picture" class="profile-img">
+                </a>
+                <span class="logo">Tech Titan</span>
+            </div>
+            <div class="nav-links">
+                <a href="games.html">Games</a>
+                <a href="tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+<header class="hero">
+    <h1 class="hero-name">Games</h1>
+    <p class="hero-title">Playable projects & system-focused prototypes</p>
+</header>
+<section class="section">
+    <h2>Current Projects</h2>
+
+    <div class="project">
+        <div class="project-preview">
+            <img src="gifs/space_storm.gif" alt="Space Storm Preview" />
+        </div>
+        <div class="project-info">
+            <h3>Space Storm</h3>
+            <p>
+                A retro-style 2D space shooter with Vectrex inspired graphics
+            </p>
+            <ul class="skills">
+                <li>Data Serialization & Persistence</li>
+                <li>Custom 2D Physics Integration</li>
+                <li>Engine-Driven Rapid Prototyping</li>
+            </ul>
+            <div class="project-actions">
+                <a href="games/space_storm.html" class="btn secondary">View Game</a>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="project-preview">
+            <img src="gifs/zed_ops.gif" alt="Zed Ops Preview" />
+        </div>
+        <div class="project-info">
+            <h3>Zed Ops Arcade</h3>
+            <p>
+                An infinite zombie survival shooter inspired by Doom and Goldeneye 007
+            </p>
+            <ul class="skills">
+                <li>Memory-Conscious System Design</li>
+                <li>A* Pathfinding Implementation</li>
+                <li>Modular Level Architecture</li>
+            </ul>
+            <div class="project-actions">
+                <a href="games/zed_ops.html" class="btn secondary">View Game</a>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="project-preview">
+            <img src="gifs/zed_ops_2.gif" alt="Zed Ops 2 Preview" />
+        </div>
+        <div class="project-info">
+            <h3>Zed Ops Arcade 2</h3>
+            <p>
+                An wave based sequel to the original Zed Ops Arcade
+            </p>
+            <ul class="skills">
+                <li>Memory-Conscious System Design</li>
+                <li>A* Pathfinding Implementation</li>
+                <li>Modular Level Architecture</li>
+            </ul>
+            <div class="project-actions">
+                <a href="games/zed_ops_2.html" class="btn secondary">View Game</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="project">
+        <div class="project-preview">
+            <img src="gifs/tiny_tanks.gif" alt="Tiny Tanks Preview" />
+        </div>
+        <div class="project-info">
+            <h3>Tiny Tanks</h3>
+            <p>
+                A reimagining of Wii Play’s Tanks minigame with expanded mechanics.
+            </p>
+            <ul class="skills">
+                <li>Local Multiplayer Input Systems</li>
+                <li>State-Driven AI Behavior</li>
+                <li>Real-Time Networking Architecture</li>
+            </ul>
+            <div class="project-actions">
+                <a href="games/tiny_tanks.html" class="btn secondary">View Game</a>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="project-preview">
+            <img src="gifs/echoed_halls.gif" alt="Echoed Halls Preview" />
+        </div>
+        <div class="project-info">
+            <h3>Echoed Halls</h3>
+            <p>
+                A procedurally generated first-person dungeon crawler
+                focused on atmosphere and exploration.
+            </p>
+            <ul class="skills">
+                <li>Procedural Level Generation</li>
+                <li>Runtime Memory Management</li>
+                <li>Performance Optimization</li>
+            </ul>
+            <div class="project-actions">
+                <a href="games/echoed_halls.html" class="btn secondary">View Game</a>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="project-preview">
+            <img src="gifs/zed_ops_java.gif" alt="Zed Ops: Java Edition" />
+        </div>
+        <div class="project-info">
+            <h3>Zed Ops: Java Edition</h3>
+            <p>
+                A 3D bunker-style zombie survival game that will test your limits.
+            </p>
+            <ul class="skills">
+                <li>Quick Prototyping</li>
+                <li>Java Collection Framework</li>
+                <li>Player Preference Management</li>
+            </ul>
+            <div class="project-actions">
+                <a href="games/zed_ops_java.html" class="btn secondary">View Game</a>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="project-preview">
+            <img src="gifs/sonic_rush_trick_simulator.gif" alt="Sonic Rush Trick Simulator" />
+        </div>
+        <div class="project-info">
+            <h3>Sonic Rush Trick Simulator</h3>
+            <p>
+                A Basic trick simulator inspired by Sonic Rush's trick system.
+            </p>
+            <ul class="skills">
+                <li>Native Scratch</li>
+                <li>Custom Blocks</li>
+                <li>HTML Embedding</li>
+            </ul>
+            <div class="project-actions">
+                <a href="games/sonic_rush_trick_simulator.html" class="btn secondary">View Game</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+    <div class="footer-buttons">
+        <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank">GitHub</a>
+        <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank">Itch.io</a>
+        <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank">Fiverr</a>
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
+
+
+
+================================================================================
+FILE: index.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Titan | Game Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <a href="index.html" class="profile-btn">
+                    <img src="images/icon.png" alt="Profile Picture" class="profile-img">
+                </a>
+                <span class="logo">Tech Titan</span>
+            </div>
+            <div class="nav-links">
+                <a href="games.html">Games</a>
+                <a href="tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1 class="hero-name">Tech Titan</h1>
+        <p class="hero-title">Game Developer & Tools Programmer</p>
+        <div class="hero-buttons">
+            <a href="games.html" class="btn primary">View Games</a>
+            <a href="tools.html" class="btn secondary">View Tools</a>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>What I Do</h2>
+        <p>
+        I build high-performance game systems, custom engines, and developer tools for indie teams 
+        and small studios. I’ve been programming since I was a kid, starting with Khan Academy and 
+        Scratch before moving into Unity C#, C, Java, Python, and web development. Currently pursuing 
+        an Associate’s degree in Advanced Computer Science, I specialize in creating games, refining 
+        gameplay mechanics, and building tools that streamline development. My work spans custom engine 
+        development, AI systems, physics simulations, and cross-platform tooling that bridges hardware 
+        and software. I focus on clean architecture, scalable systems, and developer-friendly workflows 
+        that make the creative process smoother, with the goal of building robust, maintainable systems 
+        that empower teams to work more efficiently.
+        </p>
+
+    </section>
+
+    <section class="section">
+        <h2>Core Skills</h2>
+        <ul class="skills">
+            <li>ECS Architecture</li>
+            <li>Gameplay Systems & Engine Development</li>
+            <li>Tooling & Editor Development</li>
+            <li>Automation & Scripting</li>
+            <li>Performance Optimization</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>Python</li>
+            <li>Java/HTML/CSS</li>
+            <li>Unity</li>
+            <li>Git & Version Control</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Hire Me</h2>
+        <p>
+        Available for Fiverr contracts involving game systems, tools, automation, and engine development.
+        I specialize in C++, Python, Web development, and custom tools for developers and small businesses.
+        </p>
+        <br>
+        <p>
+            <strong>Contact Me:</strong><br><br>
+            <a href="mailto:thomasmarkland302@gmail.com" class="btn secondary"> 
+                thomasmarkland302@gmail.com
+            </a>
+        </p>
+        <br>
+        <p>
+            <strong>Fiverr Gigs:</strong><br>
+            <a href="http://www.fiverr.com/s/zWEw7vE" class="btn tertiary" target="_blank">
+                <img src="images/web dev.png" alt = "web dev icon" class="btn-icon">
+                Make me a website!
+            </a>
+            <a href="http://www.fiverr.com/s/Q7qmd43" class="btn tertiary" target="_blank">
+                <img src="images/python script.png" alt = "python script icon" class="btn-icon">
+                Write me a Python script!
+            </a>
+            <a href="https://www.fiverr.com/s/YRKD4rQ" class="btn tertiary" target="_blank">
+                <img src="images/debug.png" alt = "game dev icon" class="btn-icon">
+                Debug my project!
+            </a>
+        </p>
+    </section>
+
+    <footer class="footer">
+    © 2026 Thomas Markland
+    <div class="footer-buttons">
+        <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank">GitHub</a>
+        <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank">Itch.io</a>
+        <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank">Fiverr</a>
+    </div>
+</footer>
+
+</body>
+<script>
+const sections = document.querySelectorAll(".section");
+
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    },
+    { threshold: 0.15 }
+);
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</html>
+
+
+
+================================================================================
+FILE: README.md
+================================================================================
+
+# not-tech-titan.github.io
+
+
+================================================================================
+FILE: styles.css
+================================================================================
+
+:root {
+    --bg: #000000;
+    --fg: #ffffff;
+    --accent: #4fd1c5;
+    --muted: #bbbbbb;
+    --panel: #222222;
+}
+/* ================= GLOBAL ================= */
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+}
+/* ================= ANIMATIONS ================= */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* ================= NAVBAR ================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--panel);
+    z-index: 100;
+    animation: fadeIn 0.6s ease-out;
+}
+.nav-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo container for profile + text */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* space between image and text */
+}
+
+/* Circular profile button */
+.profile-btn {
+    display: inline-block;
+    width: 40px;         /* adjust size as needed */
+    height: 40px;
+    border-radius: 50%;  /* makes it circular */
+    overflow: hidden;
+    border: 2px solid var(--accent); /* optional border */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(79, 209, 197, 0.5);
+}
+
+/* Profile image fills the button */
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nav-links a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--muted);
+    transition: color 0.2s ease;
+}
+.nav-links a:hover {
+    color: var(--accent);
+}
+/* ================= HERO ================= */
+.hero {
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    animation: fadeUp 0.8s ease-out forwards;
+}
+.hero-title {
+    font-size: 1.5rem;
+    color: var(--muted);
+    margin: 0.5rem 0 2rem 0;
+    animation: fadeUp 0.8s ease-out forwards;
+    animation-delay: 0.15s;
+    opacity: 0;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    animation: fadeUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+/* ================= BUTTONS ================= */
+.btn {
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79, 209, 197, 0.25);
+}
+.btn.primary {
+    background: var(--accent);
+    color: #000;
+}
+.btn.secondary {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}
+.btn.tertiary {
+    border: 1px solid chartreuse;
+    color: chartreuse;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px; /* space between icon and text */
+    padding: 4px 10px; /* make buttons smaller */
+    font-size: 14px;
+    text-decoration: none;
+}
+.btn-icon {
+    width: 8em;   /* shrink icon */
+    height: 8em;
+    object-fit: cover;
+    border-radius: 3px; /* optional, subtle rounded corners */
+}
+.btn-home-icon {
+    width: 3em;   /* shrink icon */
+    height: 3em;
+}
+/* ================= SECTIONS ================= */
+.section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ================= SKILLS ================= */
+.skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+.skills li {
+    background: var(--panel);
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+.skills li:hover {
+    transform: translateY(-3px);
+    background: #2a2a2a;
+}
+/* ================= PROJECT PREVIEWS ================= */
+.project {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+.project-preview {
+    flex: 0 0 250px; /* GIF width */
+    max-width: 40%;
+}
+.project-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+}
+.project-preview img:hover {
+    transform: scale(1.02);
+}
+.project-info {
+    flex: 1;
+}
+/* Responsive for small screens */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+    .project-preview {
+        max-width: 100%;
+    }
+}
+/* ================= PROJECT LINKS ================= */
+.project-actions {
+    margin-top: 1rem;
+}
+.project-actions .btn {
+    display: inline-block;
+}
+/* ================= SIP PAGE ================= */
+.sip-workflow,
+.sip-artifacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.sip-workflow-step,
+.sip-artifact,
+.sip-brief-placeholder {
+    padding: 1rem;
+    border: 1px solid var(--panel);
+    border-radius: 6px;
+    background: var(--panel);
+}
+.sip-workflow-step,
+.sip-brief-placeholder {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.sip-workflow-step span,
+.sip-artifact p,
+.sip-brief-placeholder span {
+    color: var(--muted);
+}
+.sip-artifact h3 {
+    margin-top: 0;
+}
+.sip-artifact a {
+    color: var(--accent);
+}
+/* ================= Legacy Projects ================= */
+.legacy-notice {
+    background: #f8d7da;       /* light red/pink background */
+    color: #721c24;            /* dark red text */
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    border: 1px solid #f5c6cb; /* subtle border */
+    font-family: sans-serif;
+}
+/* ================= COMING SOON ================= */
+.coming-soon {
+    position: relative;
+}
+
+.coming-soon .blur-content {
+    filter: blur(3px);
+    opacity: 0.6;
+}
+
+.coming-soon::after {
+    content: "COMING SOON";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: rgba(0,0,0,0.75);
+    color: white;
+    
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+/* ================= GAME PAGE SPECIFIC ================= */
+.game-page .project {
+    flex-direction: column; /* stack preview above text */
+    align-items: center;
+    gap: 1.5rem;
+}
+.game-page .project-preview {
+    flex: 0 0 auto;
+    max-width: 480px;
+    width: 100%;
+    align-self: center;
+}
+.game-page .project-preview img,
+.game-page .project-preview video {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+}
+.game-page .project-preview img:hover,
+.game-page .project-preview video:hover {
+    transform: scale(1.02);
+}
+/* ================= GAME PAGE BUTTONS ================= */
+body.game-page .project-actions {
+    display: flex;
+    justify-content: center;   /* centers horizontally */
+    gap: 1rem;                 /* spacing between buttons */
+    margin-top: 1.5rem;        /* some space above buttons */
+}
+/* ================= FOOTER ================= */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--muted);
+    animation: fadeIn 1s ease-out;
+}
+
+
+
+================================================================================
+FILE: tools\tech_titan_engine.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIP | Tech Titan Engine</title>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="game-page sip-page">
+
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <a href="../index.html" class="profile-btn">
+                    <img src="../images/icon.png" alt="Profile Picture" class="profile-img" />
+                </a>
+                <span class="logo">Tech Titan</span>
+            </div>
+            <div class="nav-links">
+                <a href="../games.html">Games</a>
+                <a href="../tools.html">Tools</a>
+                <a href="tech_titan_engine.html" aria-current="page">SIP</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <p class="hero-title">Senior Innovation Project</p>
+        <h1 class="hero-name">Tech Titan Engine</h1>
+        <p class="hero-title">A visual editor and game runtime designed to work together.</p>
+    </header>
+
+    <main>
+        <img src="../gifs/tech_titan_engine.gif" alt="Echoed Halls Gameplay" />
+        <section class="section">
+            <h2>Project Description</h2>
+            <p>
+                Tech Titan Engine (TTE) is a game-development project centered on a
+                C++ runtime and a separate visual editor. The editor is intended to
+                let creators assemble a game, organize its scenes and entities, and
+                configure a project visually. Lua scripting provides a way to add
+                game behavior, while the runtime is responsible for running the
+                project.
+            </p>
+            <p>
+                The project is being developed around a hierarchy of games, scenes,
+                spaces, and entities. Spaces can be configured for 2D or 3D work.
+                The goal is to make the structure of a project understandable in the
+                editor without limiting the project to one dimension or requiring
+                every task to happen in the same tool.
+            </p>
+            <ul class="skills">
+                <li>C++ game runtime</li>
+                <li>Visual project editor</li>
+                <li>2D and 3D spaces</li>
+                <li>Lua scripting</li>
+                <li>Separate editor and runtime workflow</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Innovation Claim</h2>
+            <div class="legacy-notice">
+                <strong>Working claim:</strong>
+                Tech Titan Engine explores a game-development workflow that combines
+                a visual project editor, Lua scripting, and a separate C++ runtime,
+                so creators can organize and configure a game visually while
+                retaining a code-based path for gameplay behavior.
+            </div>
+            <p>
+                This is a design goal for the project, not a claim that every planned
+                capability is finished. TTE is in active development, and the editor,
+                runtime, and workflow will continue to change as the prototype grows.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Design Workflow</h2>
+            <p>
+                The current design separates project setup from running the game.
+                The editor is where the project is organized and configured; the
+                runtime runs the saved project.
+            </p>
+            <div class="sip-workflow" aria-label="Tech Titan Engine design workflow">
+                <div class="sip-workflow-step">
+                    <strong>1. Organize</strong>
+                    <span>Set up scenes, spaces, and entities in the visual editor.</span>
+                </div>
+                <div class="sip-workflow-step">
+                    <strong>2. Configure</strong>
+                    <span>Choose 2D or 3D spaces and add project behavior with Lua.</span>
+                </div>
+                <div class="sip-workflow-step">
+                    <strong>3. Run</strong>
+                    <span>Use the separate C++ runtime to run the project.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Prototype and Project Materials</h2>
+            <p>
+                This section will collect the work created for the SIP as it becomes
+                available. The workflow diagram above describes the current design;
+                it is not a screenshot of a completed editor or a finished feature.
+            </p>
+            <div class="sip-artifacts">
+                <div class="sip-artifact">
+                    <h3>Editor Screenshots</h3>
+                    <p>Placeholder — add screenshots as the editor prototype is ready to share.</p>
+                </div>
+                <div class="sip-artifact">
+                    <h3>Blueprints and Concept Art</h3>
+                    <p>Placeholder — add interface sketches, design notes, and prototype visuals.</p>
+                </div>
+                <div class="sip-artifact">
+                    <h3>Source Code</h3>
+                    <p>
+                        The public project repository will be linked here when it is
+                        ready to share. For now, visit the
+                        <a href="https://github.com/not-tech-titan" target="_blank" rel="noopener noreferrer">Tech Titan GitHub profile</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>SIP Brief</h2>
+            <p>
+                Week 4 SIP Brief placeholder. The brief will be embedded or linked
+                here after it is completed.
+            </p>
+            <div class="sip-brief-placeholder" role="note">
+                <strong>SIP Brief</strong>
+                <span>Document embed or link to be added.</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Feedback Questions</h2>
+            <ul>
+                <li>Is the purpose of Tech Titan Engine clear from this page?</li>
+                <li>Does the editor-to-runtime workflow make sense?</li>
+                <li>What additional prototype visual would help you understand the project?</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="project-actions">
+                <a href="../tools.html" class="btn secondary">Back to Tools</a>
+                <a href="mailto:thomasmarkland302@gmail.com" class="btn secondary">Contact</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        © 2026 Thomas Markland
+        <div class="footer-buttons">
+            <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank" rel="noopener noreferrer">Itch.io</a>
+            <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank" rel="noopener noreferrer">Fiverr</a>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll(".section");
+
+        if (!sections.length) return;
+
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            },
+            { threshold: 0.15 }
+        );
+
+        sections.forEach(section => observer.observe(section));
+    });
+    </script>
+</body>
+</html>
+
+
+
+================================================================================
+FILE: tools.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tools | Tech Titan</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <a href="index.html" class="profile-btn">
+                    <img src="images/icon.png" alt="Profile Picture" class="profile-img">
+                </a>
+                <span class="logo">Tech Titan</span>
+            </div>
+            <div class="nav-links">
+                <a href="games.html">Games</a>
+                <a href="tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1 class="hero-name">Tools</h1>
+        <p class="hero-title">Engines, editors, and automation utilities</p>
+    </header>
+
+    <section class="section">
+    <h2>Development Tools</h2>
+
+    <div class="project">
+        <div class="blur-content">
+            <h3>TechTitan Engine</h3>
+            <p>
+                A game-development project pairing a visual editor with a C++ runtime. Organize 2D or 3D spaces, work with scenes and entities, and add gameplay behavior with Lua.
+            </p>
+            <ul class="skills">
+                <li>Visual Project Editor</li>
+                <li>2D and 3D Spaces</li>
+                <li>Lua Scripting</li>
+                <li>Separate Editor and Runtime</li>
+            </ul>
+            <div class="project-actions">
+                <a href="tools/tech_titan_engine.html" class="btn secondary">View SIP Project</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="project coming-soon">
+        <div class="blur-content">
+            <h3>TimeSmith</h3>
+            <p>
+                A powerful task scheduler that executes multiple actions per trigger with second-level precision. Automate system tasks like app launching, file management, notifications, and more.
+            </p>
+            <ul class="skills">
+                <li>Multi-Action Scheduling</li>
+                <li>System Automation</li>
+                <li>Precision Timing</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="project coming-soon">
+        <div class="blur-content">
+            <h3>SkeleKit</h3>
+            <p>
+                Generate fully customizable starter projects for HTML, CSS, JS, C/C++, and Python. Customize folder structure, file contents, and templates before generation to jumpstart any project.
+            </p>
+            <ul class="skills">
+                <li>Customizable Project Templates</li>
+                <li>Multi-Language Support</li>
+                <li>Batch File Generation</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2026 Thomas Markland
+    <div class="footer-buttons">
+        <a href="https://github.com/not-tech-titan" class="footer-button" target="_blank">GitHub</a>
+        <a href="https://nottechtitan.itch.io/" class="footer-button" target="_blank">Itch.io</a>
+        <a href="https://www.fiverr.com/s/e6a2Elk" class="footer-button" target="_blank">Fiverr</a>
+    </div>
+</footer>
+</body>
+<script>
+const sections = document.querySelectorAll(".section");
+
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    },
+    { threshold: 0.15 }
+);
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</html>
+
+
